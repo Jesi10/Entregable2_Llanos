@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascoteros</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon_huella.png" type="image/png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid bg-dark p-4">
+                <a class="navbar-brand mb-0 h1 text-warning fw-bold" href="#">Mascoteros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-warning" href="html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  
+    <main class="container mt-5">
+        <div class="row">
+            <aside class="col-10 col-md-2 col-lg-4">
+                <section class="card mb-3">
+                    <h5 class="card-header text-center">Buscador</h5>
+                    <div class="filtros">
+                        <label for="filtro-tipo">Filtrar por tipo:</label>
+                        <select id="filtro-tipo">
+                            <option value="todos">Todos</option>
+                            <option value="perro">Perros</option>
+                            <option value="gato">Gatos</option>
+                        </select>
+                        <label for="filtro-tamaño">Filtrar por tamaño:</label>
+                        <select id="filtro-tamaño">
+                            <option value="todos">Todos</option>
+                            <option value="pequeño">Pequeño</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                        <label for="filtro-edad">Filtrar por edad:</label>
+                        <select id="filtro-edad">
+                            <option value="todos">Todas</option>
+                            <option value="joven">Joven (Menos de 3 años)</option>
+                            <option value="adulto">Adulto (3 a 7 años)</option>
+                            <option value="mayor">Mayor (Más de 7 años)</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="card mb-3">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 d-flex align-items-center">
+                            <h3 class="quote-text">"Las mascotas no son una posesión, son un regalo para el alma."</h3>
+                        </blockquote>   
+                    </div>
+                </section>
+            </aside>
+<!--Contenido principal -->
+            <section class="col-7 col-md-9 col-lg-8">
+                <h1 class="text-center">Mascotas en adopción</h1>
+                
+                <!-- Mascotas en adopción -->
+                <article id="mascotas-container"></article>
+
+
+                <!-- Modal -->
+                <div id="modal" class="modal">
+                    <div class="modal-contenido">
+                        <span class="cerrar">&times;</span>
+                        <h2 id="modal-nombre"></h2>
+                        <p><strong>Edad:</strong> <span id="modal-edad"></span> años</p>
+                        <p><strong>Tamaño:</strong> <span id="modal-tamaño"></span></p>
+                        <p><strong>Carácter:</strong> <span id="modal-caracter"></span></p>
+                        <a id="boton-adoptar" href="html/contacto.html?motivo=adopcion" class="btn-adoptar" target="_blank">Adoptar</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+<!-- Historial -->
+        <section class="row">
+            <div class="col-12 mt-4 p-2">
+                <section id="historial">
+                    <h2>Historial de mascotas vistas</h2>
+                    <div id="historial-container"></div>
+                </section>
+            </div>
+        </section>
+    </main> 
+
+    <footer>
+        <div class="container-fluid bg-dark text-light mt-5 py-4 text-center">
+            <div class="row">
+                <div class="col">
+                    <p class="mb-1">Imágenes de <a href="https://www.freepik.es/" target="_blank" rel="noopener noreferrer" class="text-warning text-decoration-none">Freepik</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>&copy; Ladybird- Todos los derechos reservados</p>
+                    <a href="https://www.google.com/maps/place/Salta" target="_blank" rel="noopener noreferrer" class="text-warning text-decoration-none">Salta, Argentina</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

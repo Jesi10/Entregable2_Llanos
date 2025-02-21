@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Marcellus+SC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  color: #23282b;
+}
+
+
+.navbar-brand {
+    font-family: 'Goblin One', cursive;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+/* Filtros */
+.filtros {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+}
+
+/* Estilo de los labels */
+.filtros label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Estilo de los selects */
+.filtros select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 15px; 
+}
+
+
+
+select {
+  padding: 5px;
+  margin: 5px;
+}
+
+#mascotas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+.card button {
+  padding: 10px;
+  background-color: #d97745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #b25e30;
+}
+
+/* Estilos del modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 300px;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Botón adoptar */
+.btn-adoptar {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #d97745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-adoptar:hover {
+  background-color: #ff9665;
+}
+
+/* Tarjeta filtros */
+.card-header {
+  background-color: #fbf7f7;
+  color: #d97745;
+  font-weight: bold;
+}
+
+/* Frase inspiradora */
+.quote-text {
+  font-size: 3 rem;
+  color: #d97745;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Video */
+.card-video {
+  text-align: center;
+}
+
+.video-container {
+  width: 90%; 
+  max-width: 800px; 
+  margin: 20px auto; 
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+/* Invitacion */
+.p-anuncio {
+  margin-top: 10px; 
+}
+
+/* Seccion contacto-Formulario-bordes */
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #ff9665; 
+  box-shadow: 0 0 5px rgba(255, 150, 101, 0.5); /* Sombra suave en el foco */
+  outline: none; /* Eliminar el outline predeterminado del navegador */
+}
+
+/* Eliminar el enfoque azul en los campos de texto y otros inputs */
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #ff9665;
+}
+
+
+.formulario {
+  background-color: #FFe5b4; 
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones */
+.btn-warning {
+  background-color: #d97745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #b25e30;
+}
+
+/* Historial */
+#historial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adaptable al tamaño de la pantalla */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* footer*/
+footer {
+  background-color: black; 
+  color: white; 
+}
+
+footer a {
+  color: #f1c40f; /* Color dorado para los enlaces */
+  text-decoration: none; 
+}
+
+footer a:hover {
+  color: #ecf0f1;
+}
+
+
+@media (max-width: 768px) {
+  #mascotas-container {
+    grid-template-columns: 1fr;  /* Solo una tarjeta por fila */
+    gap: 15px;  /* Ajuste de gap en pantallas pequeñas */
+  }
+}
+
