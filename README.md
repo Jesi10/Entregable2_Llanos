@@ -1,4 +1,4 @@
-# 📌 Sobre el Proyecto
+# Mascoteros Zona Centro 🐕💕
 
 Este proyecto tiene como objetivo desarrollar un sitio web interactivo que facilite y fomente la adopción responsable de mascotas, aplicando la manipulación del DOM y el uso de eventos en JavaScript para mejorar la experiencia del usuario.
 
@@ -9,15 +9,13 @@ Este proyecto tiene como objetivo desarrollar un sitio web interactivo que facil
 - **Ventana modal:** Al hacer clic en *"Conóceme más"*, se abre un modal que muestra información más descriptiva sobre la mascota.
 - **Proceso de adopción:** Al presionar el botón *"Adoptar"*, el usuario es redirigido automáticamente a la sección de Contacto.
 - **Sección Contacto:** Los usuarios pueden comunicarse directamente con el refugio a través de un formulario de contacto, donde pueden realizar consultas,sugerencias, formar parte del voluntariado o iniciar el proceso de adopción.
-- **Historial de mascotas vistas:** Implementado con *localStorage*, permite almacenar en tiempo real las mascotas que el usuario ha explorado. Este historial:
+- **Historial de mascotas vistas:** Implementado con *localStorage*, permite almacenar en tiempo real las mascotas que el usuario ha mirado. Este historial:
   - Se actualiza dinámicamente sin duplicar tarjetas.
   - Se encuentra en la parte inferior de la sección principal, facilitando el acceso a mascotas favoritas incluso después de recargar la página.
 
 ## 🛠️ Tecnologías utilizadas
 
-- **HTML5 y CSS3** para la estructura y estilos del sitio.
-- **JavaScript** para la interacción dinámica con el usuario, manipulación del DOM, eventos y gestión de datos.
-- **Bootstrap** 
-- **LocalStorage** para la persistencia del historial de mascotas vistas.
+- **HTML5**, **CSS3** , **JavaScript** y **Bootstrap** .
 
-Espero que este proyecto te guste tanto como yo disfruté haciéndolo.😊
+
+Espero que este proyecto te guste tanto como yo disfruté haciéndolo😊
