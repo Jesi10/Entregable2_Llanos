@@ -1,5 +1,5 @@
 const mascotas = [
-    { nombre: "Max", tipo: "perro", edad: 2, tamaño: "mediano", caracter: "Juguetón y amistoso", imagen: "assets/imagen-Max.jpg" },
+    { nombre: "Max", tipo: "perro", edad: 2, tamaño: "mediano", caracter: "Juguetón y amistoso", imagen: "assets/imagen-max.jpg" },
     { nombre: "Bella", tipo: "perro", edad: 3, tamaño: "pequeño", caracter: "Cariñosa y tranquila", imagen: "assets/imagen-bella.jpg" },
     { nombre: "Rocky", tipo: "perro", edad: 5, tamaño: "grande", caracter: "Protector y leal", imagen: "assets/imagen-rocky.jpg" },
     { nombre: "Luna", tipo: "gato", edad: 8, tamaño: "mediano", caracter: "Curiosa y tranquila", imagen: "assets/imagen-luna.jpg" },
