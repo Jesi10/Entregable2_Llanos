@@ -8,7 +8,7 @@ Este proyecto tiene como objetivo desarrollar un sitio web interactivo que facil
 - **Sistema de filtros:** Los usuarios pueden filtrar las mascotas por tipo (*gato o perro*), edad (*joven, adulto, mayor*) y tamaño (*pequeño, mediano, grande*) para encontrar su compañero ideal.
 - **Ventana modal:** Al hacer clic en *"Conóceme más"*, se abre un modal que muestra información más descriptiva sobre la mascota.
 - **Proceso de adopción:** Al presionar el botón *"Adoptar"*, el usuario es redirigido automáticamente a la sección de Contacto.
-- **Sección Contacto:** Los usuarios pueden comunicarse directamente con el refugio a través de un formulario de contacto, donde pueden realizar consultas,sugerencias, formar parte del voluntariado o iniciar el proceso de adopción. La validación del formulario se realiza mediante JS.
+- **Sección Contacto:** Los usuarios pueden comunicarse directamente con el refugio a través de un formulario de contacto, donde pueden realizar consultas,sugerencias, formar parte del voluntariado o iniciar el proceso de adopción.La validación del formulario se realiza mediante JS.
 - **Historial de mascotas vistas:** Implementado con *localStorage*, permite almacenar en tiempo real las mascotas que el usuario ha mirado. Este historial:
   - Se actualiza dinámicamente sin duplicar tarjetas.
   - Se encuentra en la parte inferior de la sección principal, facilitando el acceso a mascotas favoritas incluso después de recargar la página.
