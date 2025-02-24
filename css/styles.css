@@ -197,14 +197,14 @@ video {
 }
 
 /* Eliminar el enfoque azul en los campos de texto y otros inputs */
-.formulario input:focus,
-.formulario textarea:focus {
+.formValidacion input:focus,
+.formValidacion textarea:focus {
   outline: none;
   border-color: #ff9665;
 }
 
 
-.formulario {
+.formValidacion {
   background-color: #FFe5b4; 
   padding: 2rem;
   border-radius: 10px;
